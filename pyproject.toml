@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "translate"
+version = "0.1.0"
+description = ""
+authors = ["daichan132 <wakadai0319@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pymupdf = {url = "https://github.com/pymupdf/PyMuPDF/archive/refs/tags/1.19.5.tar.gz"}
+requests = "^2.27.1"
+clean-text = {extras = ["gpl"], version = "^0.6.0"}
+neologdn = "^0.5.1"
+pyperclip = "^1.8.2"
+Pillow = "^9.2.0"
+pyocr = "^0.8.3"
+python-dotenv = "^0.21.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.1.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
